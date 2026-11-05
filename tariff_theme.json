@@ -1,0 +1,13 @@
+{
+  "name": "Tariff Exposure",
+  "dataColors": ["#2F6DB5", "#C8553D", "#4A9A9A", "#A0A8B0", "#7A8590", "#D9A441"],
+  "background": "#FFFFFF",
+  "foreground": "#333333",
+  "tableAccent": "#2F6DB5",
+  "textClasses": {
+    "callout": { "fontSize": 26, "fontFace": "Segoe UI Semibold", "color": "#333333" },
+    "title":   { "fontSize": 12, "fontFace": "Segoe UI Semibold", "color": "#333333" },
+    "header":  { "fontSize": 11, "fontFace": "Segoe UI Semibold", "color": "#333333" },
+    "label":   { "fontSize": 10, "fontFace": "Segoe UI", "color": "#555555" }
+  }
+}
