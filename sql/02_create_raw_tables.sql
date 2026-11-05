@@ -23,7 +23,7 @@ CREATE TABLE raw.dataweb_imports (
     y2026_jan_aug  TEXT
 );
 
--- Harmonized Tariff Schedule (HTS) lines for chapters 8301–8302, with duty rates.
+-- Harmonized Tariff Schedule (HTS), chapter 83 (headings 8301–8311), with duty rates.
 -- Source: USITC HTS export (htsdata.csv).
 CREATE TABLE raw.hts_schedule (
     hts_number         TEXT,
