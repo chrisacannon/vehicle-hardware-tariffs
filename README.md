@@ -40,6 +40,12 @@ The per-code, per-origin tariff rates built here are the foundation for **landed
 5. **Apply tariff rules.** Assign each origin a tier from the sourced rules table and estimate the tariff on 2025 import values.
 6. **Visualize and reconcile again.** Build the Power BI pages and check their numbers against the SQL results.
 
+## How this was built
+
+I built this project with an AI-assisted learning method. Before any SQL was written, I had Claude lay out the work as a sequence of tasks, each with the result to expect, so I could check my own work. I wrote every query myself, Claude reviewed each one the way a senior analyst would, and I logged every data decision in the cleaning log.
+
+The task files and SQL notes are in [`process/`](process/). They're kept on purpose: they make the analysis repeatable, so a new analyst can follow the same steps on a new product segment or extend the project to its next phase.
+
 ## Scope and assumptions
 
 - **Products:** 6 HTS codes under 8301.20, 8302.10.30 and 8302.30 (locks, hinges, and fittings and mountings for motor vehicles). U.S. imports for consumption, customs value, 2019 through August 2026.
@@ -64,7 +70,7 @@ These are estimates for illustration, not for customs or pricing decisions.
 | `tariff_theme.json` | Power BI theme (colors and fonts) |
 | `*.pbix` | The Power BI dashboard |
 | `images/` | Dashboard and validation screenshots |
-| `tasks_batch1–3.md`, `sql_cheat_sheet.md` | Working notes: the build plan and SQL reference used along the way |
+| `process/` | The task-by-task build plan (`tasks_batch1–3.md`) with expected results, and the SQL reference (`sql_cheat_sheet.md`); see *How this was built* |
 
 ## Rebuild it
 
